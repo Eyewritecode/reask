@@ -1,0 +1,19 @@
+{
+  "name": "reask",
+  "version": "1.0.0",
+  "description": "a simple web app to explore how to ReactJS and Flask work together",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eyewritecode/reask.git"
+  },
+  "author": "Thibault",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eyewritecode/reask/issues"
+  },
+  "homepage": "https://github.com/Eyewritecode/reask#readme"
+}
