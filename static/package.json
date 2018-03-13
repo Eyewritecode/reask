@@ -1,5 +1,5 @@
 {
-  "name": "reask",
+  "name": "Reask",
   "version": "1.0.0",
   "description": "a simple web app to explore how to ReactJS and Flask work together",
   "main": "index.js",
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Eyewritecode/reask/issues"
   },
-  "homepage": "https://github.com/Eyewritecode/reask#readme"
+  "homepage": "https://github.com/Eyewritecode/reask#readme",
+  "devDependencies": {
+    "webpack": "^4.1.1"
+  }
 }
