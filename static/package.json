@@ -1,16 +1,19 @@
 {
   "name": "Reask",
   "version": "1.0.0",
-  "description": "a simple web app to explore how to ReactJS and Flask work together",
+  "description": "a simple web app to explore how to ReactJS , NPM, Webpack and Flask work together",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack -p --progress --config webpack.config.js",
+    "dev-build": "webpack --progress -d --config webpack.config.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --progress -d --config webpack.config.js --watch"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Eyewritecode/reask.git"
   },
-  "author": "Thibault",
+  "author": "Thibault Mutabazi",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Eyewritecode/reask/issues"
