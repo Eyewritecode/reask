@@ -1,11 +1,11 @@
 import React from "react";
-
+import {Button} from "react-bootstrap";
 var $ = require("jquery");
 
 export default class Hello extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {greeting: "Ohayo" + this.props.name};
+    this.state = {greeting: "Ohayo " + this.props.name};
     this.getPythonHello = this.getPythonHello.bind(this);
   }
 
@@ -21,11 +21,13 @@ export default class Hello extends React.Component {
   }
   render() {
     return(
-      <h1>{this.state.greeting}</h1>
-      <hr/>
-      <Button bsSize="large" bsStyle="danger" onClick={this.getPythonHello}>
-        Say Hello!
-      </Button>
+      <div>
+        <h1>{this.state.greeting}</h1>
+        <hr/>
+        <Button bsSize="large" bsStyle="danger" onClick={this.getPythonHello}>
+          Say Hello!
+        </Button>
+      </div>
     );
   }
 }
