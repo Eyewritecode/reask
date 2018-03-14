@@ -1,5 +1,7 @@
 import React from "react";
 
+var $ = require("jquery");
+
 export default class Hello extends React.Component {
   constructor(props) {
     super(props);
@@ -9,5 +11,21 @@ export default class Hello extends React.Component {
 
   personaliseGreeting(greeting){
     this.setState({greeting: greeting + " " + this.props.name + "!"});
+  }
+
+  getPythonHello(){
+    $.get(window.location.href + "hello", (data) => {
+      console.log(data);
+      this.personaliseGreeting(data);
+    });
+  }
+  render() {
+    return(
+      <h1>{this.state.greeting}</h1>
+      <hr/>
+      <Button bsSize="large" bsStyle="danger" onClick={this.getPythonHello}>
+        Say Hello!
+      </Button>
+    );
   }
 }
