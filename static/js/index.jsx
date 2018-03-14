@@ -1,14 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Hello from "./Hello";
-import { PageHeader } from "react-bootstrap";
+import App from "./App";
 
-ReactDOM.render(){
-  return(
-    <PageHeader>
-      <div className='header-contents'>
-        <Hello name="T'Challa" />
-      </div>
-    </PageHeader>
-  );
-}
+ReactDOM.render(<App />, document.getElementById("content"));
