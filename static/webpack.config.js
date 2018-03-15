@@ -42,8 +42,15 @@ const config = {
         })      
       },
       {
-        test: /\.(png|svg|jpg|gif)$/,
-        use: 'file-loader'
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              publicPath: '/dist'
+            }  
+          }
+        ]
       }
     ]
   },
