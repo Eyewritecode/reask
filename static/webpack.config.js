@@ -38,13 +38,13 @@ const config = {
         test: /\.css$/,
         use: ExtractTextPlugin.extract({
           fallback: "style-loader",
-          use: "css-loader",
+          use: "css-loader"
         })      
       },
       {
         test: /\.(png|svg|jpg|gif)$/,
-        use: 'file-loader',
-      },
+        use: 'file-loader'
+      }
     ]
   },
   plugins: [
