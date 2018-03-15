@@ -13,6 +13,7 @@
     position:absolute;
 }
 .header-contents h1 {
+    color: #ffffff;
     font-size: 120px;
     font-weight: 300;
 }
