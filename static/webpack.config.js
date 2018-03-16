@@ -38,8 +38,19 @@ const config = {
         test: /\.css$/,
         use: ExtractTextPlugin.extract({
           fallback: "style-loader",
-          use: "css-loader",
+          use: "css-loader"
         })      
+      },
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              publicPath: '/dist'
+            }  
+          }
+        ]
       }
     ]
   },
