@@ -4,6 +4,8 @@
   "description": "a simple web app to explore how to ReactJS , NPM, Webpack and Flask work together",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d ../.",
     "build": "webpack -p --progress --config webpack.config.js",
     "dev-build": "webpack --progress -d --config webpack.config.js",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -18,7 +20,7 @@
   "bugs": {
     "url": "https://github.com/Eyewritecode/reask/issues"
   },
-  "homepage": "https://github.com/Eyewritecode/reask#readme",
+  "homepage": "https://eyewritecode.github.io/reask",
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
@@ -27,6 +29,8 @@
     "css-loader": "^0.28.10",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^1.1.11",
+    "gh-pages": "^1.1.0",
+    "gh-pages-deploy": "^0.4.2",
     "jquery": "^3.3.1",
     "react": "^16.2.0",
     "react-bootstrap": "^0.32.1",
@@ -39,5 +43,15 @@
     "presets": [
       "react"
     ]
+  },
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "chownr": "^1.0.1",
+    "mississippi": "^3.0.0",
+    "promise-inflight": "^1.0.1",
+    "react-sc": "^0.2.1",
+    "ssri": "^5.3.0",
+    "unique-filename": "^1.1.0",
+    "y18n": "^4.0.0"
   }
 }

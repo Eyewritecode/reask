@@ -47,7 +47,7 @@ const config = {
           {
             loader: 'file-loader',
             options: {
-              publicPath: '/dist'
+              publicPath: '/reask/static/dist'
             }  
           }
         ]
